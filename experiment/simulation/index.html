@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< Updated upstream
 
 <html>
 
@@ -22,6 +23,73 @@
     <style></style>
 
     <script src="js/main.js"></script>
+=======
+<html lang="en">
+
+<head>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Stroop Task</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<div class = sc>
+		<div class="container">
+			<div class="columns is-centered">
+				<div class="column">
+					<div class="v-collapsible-instruction-container v-instruction-container">
+						<div id="instruction-title" class="v-collapsible is-size-5">Instructions<br>To perform Stroop Task</div>
+						<div class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
+							<ul style="list-style: disc;">
+								<li>Press key 'g' for 'green', 'b' for 'blue, 'r' for 'red, 'y' for 'yellow.'</li>
+	                            <li> Ignore the word's meaning. Press Space to start.</li>
+								<li>After completing the experiment, click on results to see the time taken(in ms) for each response.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="columns is-centered">
+			<div class="column is-7-desktop is-12-tablet is-12-mobile">
+				<div id="circuit-board">
+					<div id="working-area">
+	                    <div>    
+							<div class = "para">
+	                                <h1>Welcome to Stroop Experiment!</h1>
+	                                <h2>Correct Count = <span id = "count"></p></h2>   
+	                            	<canvas id="experiment" width="1084" height="632"></canvas>
+	                        </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="columns is-centered">
+			<div class="column is-7-desktop is-12-tablet is-12-mobile">
+				<div id="circuit-board2">
+					<div id="working-area2">
+						<div>
+							<canvas id="experiment1" width="1084" height="72"></canvas>
+						</div>
+						<div>
+							<center><button class="v-button" onclick="endExperiment1()" id="buttoncss">Result</button></center>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<!-- <script src="js/jsplumb.bundle.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+	<script src="main.js"></script>
+	<script>window.onload = main()</script>
+>>>>>>> Stashed changes
 </body>
 
 </html>
