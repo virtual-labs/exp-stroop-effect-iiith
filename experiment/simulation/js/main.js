@@ -1,14 +1,5 @@
 var words = ["GREEN", "BLUE", "RED", "YELLOW"];
 var colors = ["#00FF00", "#0000FF", "#FF0000", "#FFFF00"];
-<<<<<<< Updated upstream
-var trials = 5;
-var trialNum = 0;
-var correctcount = 0;
-document.getElementById("count").innerHTML = correctcount;
-var time = [];
-var startTime, endTime;
-var timediff = (endTime - startTime)/1000;
-=======
 var word, color;
 var trials = 5;
 var trialNum = 0;
@@ -18,7 +9,6 @@ var accept_click=0;
 var endTime;
 var startTime;
 var time = [];
->>>>>>> Stashed changes
 
 const colorDict = {
     g: "#00FF00",
@@ -27,11 +17,8 @@ const colorDict = {
     y: "#FFFF00",
 };
 
-<<<<<<< Updated upstream
-=======
 document.getElementById("count").innerHTML = correctcount;
 
->>>>>>> Stashed changes
 function getRandom(items) {
     return items[Math.floor(Math.random() * items.length)];
 }
@@ -50,10 +37,6 @@ function writeText(text, color = "#FFFFFF") {
     );
 }
 
-<<<<<<< Updated upstream
-function endExperiment() {
-    writeText("Thanks for participating!");
-=======
 function endExperiment(){
     ctx.font = "50px Times New Roman";
     writeText("Thankyou!");
@@ -71,21 +54,10 @@ function endExperiment1() {
     ctx.textAlign = "center";
     ctx.fillStyle = "black";
     ctx.fillText(times, window.canvas.width/2, window.canvas.height/2);
->>>>>>> Stashed changes
 }
 
 function displayTrial() {
     if (trialNum < trials) {
-<<<<<<< Updated upstream
-        clearCanvas();
-        word = getRandom(words);
-        color = getRandom(colors);
-        window.ctx.font = "50px Times New Roman";
-        writeText(word, color);
-        // startTime = new Date().getTime();
-        trialNum++;
-    } else {
-=======
         startTime = Date.now();
         clearCanvas();
         word = getRandom(words);
@@ -95,32 +67,11 @@ function displayTrial() {
         accept_click = 1;
     } 
     else {
->>>>>>> Stashed changes
         endExperiment();
     }
 }
 
 document.addEventListener("keydown", function (f) {
-<<<<<<< Updated upstream
-    if (f.key == " " && trialNum == 0) {
-        displayTrial();
-        return;
-    }
-    for (let key in colorDict) {
-        if (f.key == key && color == colorDict[key]) {
-            // endTime = new Date().getTime();
-            console.log(timediff + "seconds")
-            writeText("Correct", color = "#00FF00");
-            correctcount++;
-            document.getElementById("count").innerHTML = correctcount;
-            
-            setTimeout(displayTrial, 2000);
-            return;
-        }
-    }
-    writeText("Wrong", color = "#FF0000");
-    setTimeout(displayTrial, 2000);
-=======
     if (f.key == " " && trialNum == 0 && start_exp==0) {
         start_exp=1;
         setTimeout(displayTrial,2000);
@@ -164,7 +115,6 @@ document.addEventListener("keydown", function (f) {
         }
         writeText("Wrong", color = "#FF0000");
     }
->>>>>>> Stashed changes
 });
 
 function setup() {
@@ -172,10 +122,7 @@ function setup() {
     window.ctx = window.canvas.getContext("2d");
     window.ctx.textAlign = "center";
     window.ctx.font = "20px sans-serif";
-<<<<<<< Updated upstream
-=======
     correctcount = 0;
->>>>>>> Stashed changes
 }
 
 function instructions() {
@@ -188,8 +135,3 @@ function main() {
     setup();
     instructions();
 }
-<<<<<<< Updated upstream
-
-$(window).on("load", main);
-=======
->>>>>>> Stashed changes
