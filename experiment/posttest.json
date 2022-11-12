@@ -2,38 +2,55 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Choose the correct statement that describes Stroop Effect.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Is a phenomenon in which the tendency to name a word will interfere with the ability to say the color in which the word is printed.",
+        "b": "Is a mental activity that consists of organizing information or beliefs into a series of steps in order to reach conclusions.",
+        "c": "Is a phenomenon in which the patient loses the ability to learn new things after a head injury. ",
+        "d": "Is a phenomenon in which participants fail to detect the change in a scene when the change matches the context."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which of the following is not a type of Stroop Effect?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Color-Word",
+        "b": "Color-Color",
+        "c": "Word-Word",
+        "d": "Word-Color"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "You are standing at a T junction and looking for a direction signage board to find the location of building X. Though unknown to you, the actual location of the building is to your right. You happen to find a signage as follows. Which of the following direction board will help in making decision faster and more accurate? ",
+      "answers": {
+        "a": "<img src = 'images/q2a.jpg' />",
+        "b": "<img src = 'images/q2b.jpg' />",
+        "c": "Both A and B",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "medium"
     }
   ]
 }
