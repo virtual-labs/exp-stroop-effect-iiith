@@ -30,6 +30,8 @@ function clearCanvas() {
 function writeText(text, color = "#FFFFFF") {
     clearCanvas();
     window.ctx.fillStyle = color;
+    window.ctx.textAlign = "center";
+    window.ctx.font = "1em sans-serif";
     window.ctx.fillText(
         text,
         window.canvas.width / 2,
@@ -38,7 +40,6 @@ function writeText(text, color = "#FFFFFF") {
 }
 
 function endExperiment(){
-    ctx.font = "50px Times New Roman";
     writeText("Thankyou!");
 }
 
@@ -48,7 +49,7 @@ function endExperiment1() {
     window.canvas = document.getElementById("experiment1");
     window.ctx = window.canvas.getContext("2d");
     window.ctx.textAlign = "center";
-    window.ctx.font = "20px sans-serif";
+    window.ctx.font = "1rem sans-serif";
     let times = time.toString();
     document.getElementById("experiment1").innerHTML = times;
     ctx.textAlign = "center";
@@ -62,12 +63,12 @@ function displayTrial() {
         clearCanvas();
         word = getRandom(words);
         color = getRandom(colors);
-        ctx.font = "50px Times New Roman";
+        ctx.font = "2rem Times New Roman";
         writeText(word, color);
         accept_click = 1;
     } 
     else {
-        endExperiment();
+        endExperiment1();
     }
 }
 
@@ -121,7 +122,7 @@ function setup() {
     window.canvas = document.getElementById("experiment");
     window.ctx = window.canvas.getContext("2d");
     window.ctx.textAlign = "center";
-    window.ctx.font = "20px sans-serif";
+    window.ctx.font = "1rem sans-serif";
     correctcount = 0;
 }
 
