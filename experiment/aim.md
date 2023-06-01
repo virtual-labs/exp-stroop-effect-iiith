@@ -1,3 +1,2 @@
 ## Aim of the Experiment
-The Aim of the Stroop task is to measure interference that occurs in the brain. <br>
-It is a neuropsychological test extensively used to measure a person’s selective attention capacity and skills, processing speed, and alongside other tests to evaluate overall executive processing abilities.
+The aim of this experiment is to investigate the Stroop effect using the Stroop color and word test in a virtual lab setting. The experiment is designed to help participants understand the theory behind the Stroop effect and provide them with an opportunity to conduct the experiment digitally, thereby enhancing their knowledge and practical skills.

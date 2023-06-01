@@ -17,6 +17,23 @@
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
+    },
+    {
+      "question": "In the Stroop color and word test, what is the main task for participants?",
+      "answers": {
+        "a": "Reading the words aloud.",
+        "b": "Identifying the ink color of the words.",
+        "c": "Memorizing the order of the presented words.",
+        "d": "Counting the total number of words displayed."
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
     }
   ]
 }
