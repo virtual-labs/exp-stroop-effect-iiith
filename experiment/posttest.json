@@ -51,6 +51,23 @@
       },
       "correctAnswer": "b",
       "difficulty": "medium"
+    },
+    {
+      "question": "What does the Stroop effect demonstrate?",
+      "answers": {
+        "a": "The impact of font styles on reading speed.",
+        "b": "The influence of word length on memory recall.",
+        "c": "The interference between automatic word reading and color identification.",
+        "d": "The relationship between word complexity and reading comprehension."
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "medium"
     }
   ]
 }
