@@ -1,0 +1,2 @@
+## Aim of the Experiment
+The aim of this experiment is to investigate the Stroop effect using the Stroop color and word test in a virtual lab setting. The experiment is designed to help participants understand the theory behind the Stroop effect and provide them with an opportunity to conduct the experiment digitally, thereby enhancing their knowledge and practical skills.
