@@ -31,12 +31,14 @@ function writeText(text, color = "#FFFFFF") {
     clearCanvas();
     window.ctx.fillStyle = color;
     window.ctx.textAlign = "center";
-    window.ctx.font = "1em sans-serif";
-    window.ctx.fillText(
-        text,
-        window.canvas.width / 2,
-        window.canvas.height / 2
-    );
+    window.ctx.font = fontSize + " sans-serif";
+    const lines = text.split("\n");
+    const lineHeight = 30;
+    const startY = window.canvas.height / 2 - (lines.length - 1) * lineHeight / 2;
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+        window.ctx.fillText(line, window.canvas.width / 2, startY + i * lineHeight);
+    }
 }
 
 function endExperiment(){
@@ -64,7 +66,7 @@ function displayTrial() {
         word = getRandom(words);
         color = getRandom(colors);
         ctx.font = "2rem Times New Roman";
-        writeText(word, color);
+        writeText(word, color, fontSize = "2rem");
         accept_click = 1;
     } 
     else {
@@ -118,6 +120,18 @@ document.addEventListener("keydown", function (f) {
     }
 });
 
+
+function resetExperiment() {
+    location.reload();
+    correctcount = 0;
+    start_exp = 0;
+    trialNum = 0;
+    clearCanvas();
+}
+
+
+document.getElementById("resetButton").addEventListener("click", resetExperiment);
+
 function setup() {
     window.canvas = document.getElementById("experiment");
     window.ctx = window.canvas.getContext("2d");
@@ -127,9 +141,7 @@ function setup() {
 }
 
 function instructions() {
-    writeText(
-        "Press key 'g' for 'green', 'b' for 'blue, 'r' for 'red, 'y' for 'yellow.' Ignore the word's meaning. Press Space to start."
-    );
+    writeText("Press key 'G' for 'Green', 'B' for 'Blue, 'R' for 'Red, 'Y' for 'Yellow.'\nIgnore the word's meaning.\n Press Space to start.", color = "#FFFFFF", fontSize = "1rem");
 }
 
 function main() {
