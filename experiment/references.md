@@ -1,2 +1,4 @@
 ### References
 1) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5388755/
+2) Parris, B. A., Hasshim, N., Wadsley, M., Augustinova, M., & Ferrand, L. (2021). The loci of Stroop effects: a critical review of methods and evidence for levels of processing contributing to color-word Stroop effects and the implications for the loci of attentional selection. In Psychological Research (Vol. 86, Issue 4, pp. 1029–1053). Springer Science and Business Media LLC. https://doi.org/10.1007/s00426-021-01554-x
+3) MacLeod, C. M. (2015). The Stroop Effect. In Encyclopedia of Color Science and Technology (pp. 1–6). Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-642-27851-8_67-1

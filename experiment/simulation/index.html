@@ -13,16 +13,15 @@
 
 <body>
 	<div class="sc">
-		<div class="container">
-			<div class="v-collapsible-instruction-container v-instruction-container">
-				<div id="instruction-title" class="v-collapsible is-size-5">Instructions<br>To perform Stroop Task</div>
-				<div class="v-content">
-					<ul style="list-style: disc;">
-						<li>Press key 'g' for 'green', 'b' for 'blue, 'r' for 'red, 'y' for 'yellow.'</li>
-						<li> Ignore the word's meaning. Press Space to start.</li>
-						<li>After completing the experiment, click on results to see the time taken(in ms) for each response.</li>
-					</ul>
-				</div>
+		<div class="v-collapsible-instruction-container v-instruction-container">
+			<div id="instruction-title" class="v-collapsible is-size-5">Instructions<br>To perform Stroop Task</div>
+			<div class="v-content">
+				<ul style="list-style: disc;text-align:left">
+					<li>Press key 'g' for 'green', 'b' for 'blue, 'r' for 'red, 'y' for 'yellow.'</li>
+					<li> Ignore the word's meaning. Press Space to start.</li>
+					<li>After completing the experiment, click on results to see the time taken(in ms) for each
+						response.</li>
+				</ul>
 			</div>
 		</div>
 		<br>
@@ -35,7 +34,7 @@
 						</center>
 						<center>
 							<h2>Correct Count = <span id="count"></h2>
-						</center>		
+						</center>
 						<canvas id="experiment" width="800" height="450"></canvas>
 					</div>
 				</div>
@@ -53,9 +52,10 @@
 		<div class="container">
 			<div class="columns is-centered">
 				<button class="v-button" onclick="endExperiment1()">Result</button>
+				<button class="v-button" onclick="resetExperiment()">Reset</button>
 			</div>
 		</div>
-	</div>	
+	</div>
 	<script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
 	<script src="./js/main.js"></script>
 	<script>window.onload = main();</script>
