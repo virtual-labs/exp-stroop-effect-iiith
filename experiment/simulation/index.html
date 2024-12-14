@@ -14,28 +14,41 @@
 <body>
 	<div class="sc">
 		<div class="v-collapsible-instruction-container v-instruction-container">
-			<div id="instruction-title" class="v-collapsible is-size-5">Instructions<br>To perform Stroop Task</div>
+			<div id="instruction-title" class="v-collapsible is-size-5">Instructions for Performing the Stroop Task</div>
 			<div class="v-content">
-				<ul style="list-style: disc;text-align:left">
-					<li>Press key 'g' for 'green', 'b' for 'blue, 'r' for 'red, 'y' for 'yellow.'</li>
-					<li> Ignore the word's meaning. Press Space to start.</li>
-					<li>After completing the experiment, click on results to see the time taken(in ms) for each
-						response.</li>
+				<ul style="list-style: disc; text-align:left">
+					<li>When the experiment starts, a word will appear on the screen in a specific color.</li>
+					<li>Your task is to identify the color of the word as quickly as possible, not the meaning of the word.</li>
+					<li>To do this, press the corresponding key on your keyboard:</li>
+					<ul style="list-style: none; text-align:left">
+						<li>'g' for green</li>
+						<li>'b' for blue</li>
+						<li>'r' for red</li>
+						<li>'y' for yellow</li>
+						<li>Note: The keys are case sensitive and must be <strong>lower case</strong>.</li>
+					</ul>
+					<li>If the word "RED" is shown in red color, press 'r'. If the word "RED" is shown in blue color, press
+						'b', and so on.</li>
+					<li>Press the Spacebar to start the experiment when you're ready.</li>
+					<li>Once the experiment is completed, you can click on "Results" to view your response times (in
+						milliseconds) for each trial.</li>
+					<li>Good luck, and enjoy the experiment!</li>
 				</ul>
 			</div>
 		</div>
 		<br>
+		<h2 style="color: red;text-align: center;font-size: 1rem;">Note: Please wait after clicking space. It may take time to start the experiment.</h2>
 		<div class="container">
 			<div id="circuit-board">
 				<div id="working-area">
 					<div class="para">
 						<center>
-							<h1>Welcome to Stroop Experiment!</h1>
+							<h1 style="font-size: 1.4rem">Welcome to Stroop Experiment!</h1>
 						</center>
 						<center>
-							<h2>Correct Count = <span id="count"></h2>
+							<h2 style="font-size: 1.2rem">Correct Count = <span id="count"></h2>
 						</center>
-						<canvas id="experiment" width="800" height="450"></canvas>
+						<canvas id="experiment" width="900" height="550"></canvas>
 					</div>
 				</div>
 			</div>

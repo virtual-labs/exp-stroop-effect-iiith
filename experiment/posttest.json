@@ -2,23 +2,6 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Choose the correct statement that describes Stroop Effect.",
-      "answers": {
-        "a": "Is a phenomenon in which the tendency to name a word will interfere with the ability to say the color in which the word is printed.",
-        "b": "Is a mental activity that consists of organizing information or beliefs into a series of steps in order to reach conclusions.",
-        "c": "Is a phenomenon in which the patient loses the ability to learn new things after a head injury. ",
-        "d": "Is a phenomenon in which participants fail to detect the change in a scene when the change matches the context."
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
       "question": "Which of the following is not a type of Stroop Effect?",
       "answers": {
         "a": "Color-Word",
@@ -27,13 +10,13 @@
         "d": "Word-Color"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The Color-Word Stroop effect involves interference between the color of the ink and the word itself.",
+        "b": "Color-Color Stroop is a valid type, where both the color of the text and the background color are involved.",
+        "c": "This is not a type of Stroop effect; Word-Word Stroop is not a recognized category.",
+        "d": "The Word-Color Stroop effect is another recognized form, similar to Color-Word Stroop."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
     },
     {
       "question": "You are standing at a T junction and looking for a direction signage board to find the location of building X. Though unknown to you, the actual location of the building is to your right. You happen to find a signage as follows. Which of the following direction board will help in making decision faster and more accurate? ",
@@ -44,13 +27,13 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "This image might lead to slower decision-making due to conflicting visual cues showing right indication but written left on the board.",
+        "b": "This image provides a clearer direction, as it shows the actual location of the building, making the decision-making process faster and more accurate.",
+        "c": "This is incorrect as only one image supports faster decision-making.",
+        "d": "This is incorrect as one of the images does help in making a faster decision."
       },
       "correctAnswer": "b",
-      "difficulty": "medium"
+      "difficulty": "intermediate"
     },
     {
       "question": "What does the Stroop effect demonstrate?",
@@ -61,13 +44,13 @@
         "d": "The relationship between word complexity and reading comprehension."
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "This is not correct. The Stroop effect is not about font styles and reading speed.",
+        "b": "This is incorrect. The Stroop effect does not relate to word length or memory recall.",
+        "c": "Correct! The Stroop effect demonstrates how automatic processes like reading words interfere with more controlled tasks like identifying colors.",
+        "d": "This is not correct. The Stroop effect is not related to word complexity and reading comprehension."
       },
       "correctAnswer": "c",
-      "difficulty": "medium"
+      "difficulty": "intermediate"
     }
   ]
 }
