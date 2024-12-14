@@ -47,7 +47,7 @@ function endExperiment(){
 
 function endExperiment1() {
     clearCanvas();
-    writeText("Thankyou!");
+    writeText("Thank you for participating!");
     window.canvas = document.getElementById("experiment1");
     window.ctx = window.canvas.getContext("2d");
     window.ctx.textAlign = "center";
@@ -141,7 +141,7 @@ function setup() {
 }
 
 function instructions() {
-    writeText("Press key 'G' for 'Green', 'B' for 'Blue, 'R' for 'Red, 'Y' for 'Yellow.'\nIgnore the word's meaning.\n Press Space to start.", color = "#FFFFFF", fontSize = "1rem");
+    writeText("Press key 'G' for 'Green', 'B' for 'Blue, 'R' for 'Red, 'Y' for 'Yellow.'\nIgnore the word's meaning.\n Press Space to start.", color = "#FFFFFF", fontSize = "1.5rem");
 }
 
 function main() {

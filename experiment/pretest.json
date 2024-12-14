@@ -4,16 +4,16 @@
     {
       "question": "Choose the correct statement that describes Stroop Effect.",
       "answers": {
-        "a": "Is a phenomenon in which the tendency to name a word will interfere with the ability to say the color in which the word is printed.",
+        "a": "Is a phenomenon in which the tendency to name a word will interfere with the ability to say the color in which the word is shown.",
         "b": "Is a mental activity that consists of organizing information or beliefs into a series of steps in order to reach conclusions.",
         "c": "Is a phenomenon in which the patient loses the ability to learn new things after a head injury. ",
         "d": "Is a phenomenon in which participants fail to detect the change in a scene when the change matches the context."
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Correct! The Stroop effect involves interference when the word's meaning conflicts with its color.",
+        "b": "This is not related to the Stroop effect. It's more related to cognitive processes like reasoning.",
+        "c": "This is describing a condition related to head injury, not the Stroop effect.",
+        "d": "This describes a different phenomenon, not the Stroop effect."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -22,15 +22,32 @@
       "question": "In the Stroop color and word test, what is the main task for participants?",
       "answers": {
         "a": "Reading the words aloud.",
-        "b": "Identifying the ink color of the words.",
+        "b": "Identifying the color of the words.",
         "c": "Memorizing the order of the presented words.",
         "d": "Counting the total number of words displayed."
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Reading the words aloud is not the primary task. The focus is on color identification.",
+        "b": "Correct! Participants are required to name the color of the words, not the word itself.",
+        "c": "This is not the task in the Stroop test. The focus is on color recognition, not memorization.",
+        "d": "Counting the number of words is not part of the Stroop test."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What happens in incongruent trials of the Stroop test?",
+      "answers": {
+        "a": "The word and the color match, and participants respond quickly.",
+        "b": "The word and the color do not match, causing slower responses and more errors.",
+        "c": "The word and color are irrelevant, and participants are unaffected by them.",
+        "d": "The word appears in a neutral color, with no interference in response."
+      },
+      "explanations": {
+        "a": "This is incorrect. In congruent trials, the word and color match.",
+        "b": "Correct! In incongruent trials, the mismatch between the word and color causes interference, slowing responses.",
+        "c": "This is incorrect. The Stroop effect involves interference between the word and color.",
+        "d": "This is incorrect. Neutral words don't involve the Stroop effect, which occurs when there is a mismatch between word and color."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
