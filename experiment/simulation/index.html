@@ -2,76 +2,91 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>Stroop Task</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
-	<link rel="stylesheet" href="./css/main.css">
+    <title>Stroop Task</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
-	<div class="sc">
-		<div class="v-collapsible-instruction-container v-instruction-container">
-			<div id="instruction-title" class="v-collapsible is-size-5">Instructions for Performing the Stroop Task</div>
-			<div class="v-content">
-				<ul style="list-style: disc; text-align:left">
-					<li>When the experiment starts, a word will appear on the screen in a specific color.</li>
-					<li>Your task is to identify the color of the word as quickly as possible, not the meaning of the word.</li>
-					<li>To do this, press the corresponding key on your keyboard:</li>
-					<ul style="list-style: none; text-align:left">
-						<li>'g' for green</li>
-						<li>'b' for blue</li>
-						<li>'r' for red</li>
-						<li>'y' for yellow</li>
-						<li>Note: The keys are case sensitive and must be <strong>lower case</strong>.</li>
-					</ul>
-					<li>If the word "RED" is shown in red color, press 'r'. If the word "RED" is shown in blue color, press
-						'b', and so on.</li>
-					<li>Press the Spacebar to start the experiment when you're ready.</li>
-					<li>Once the experiment is completed, you can click on "Results" to view your response times (in
-						milliseconds) for each trial.</li>
-					<li>Good luck, and enjoy the experiment!</li>
-				</ul>
-			</div>
-		</div>
-		<br>
-		<h2 style="color: red;text-align: center;font-size: 1rem;">Note: Please wait after clicking space. It may take time to start the experiment.</h2>
-		<div class="container">
-			<div id="circuit-board">
-				<div id="working-area">
-					<div class="para">
-						<center>
-							<h1 style="font-size: 1.4rem">Welcome to Stroop Experiment!</h1>
-						</center>
-						<center>
-							<h2 style="font-size: 1.2rem">Correct Count = <span id="count"></h2>
-						</center>
-						<canvas id="experiment" width="900" height="550"></canvas>
-					</div>
-				</div>
-			</div>
-		</div>
-		<br>
-		<div class="container">
-			<div id="circuit-board2">
-				<div id="working-area2">
-					<canvas id="experiment1" width="850" height="55"></canvas>
-				</div>
-			</div>
-		</div>
-		<br>
-		<div class="container">
-			<div class="columns is-centered">
-				<button class="v-button" onclick="endExperiment1()">Result</button>
-				<button class="v-button" onclick="resetExperiment()">Reset</button>
-			</div>
-		</div>
-	</div>
-	<script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
-	<script src="./js/main.js"></script>
-	<script>window.onload = main();</script>
+    <div class="sc">
+        <div class="v-collapsible-instruction-container v-instruction-container">
+            <div id="instruction-title" class="v-collapsible is-size-5">
+                Instructions for Performing the Stroop Task
+            </div>
+            <div class="v-content">
+                <ul style="list-style: disc; text-align:left">
+                    <li>When the experiment starts, a word will appear on the screen in a specific color.</li>
+                    <li>Your task is to identify the <strong>color</strong> of the word as quickly as possible, not the
+                        meaning of the word.</li>
+                    <li>Press the corresponding key on your keyboard:
+                        <ul>
+                            <li>'g' for green</li>
+                            <li>'b' for blue</li>
+                            <li>'r' for red</li>
+                            <li>'y' for yellow</li>
+                        </ul>
+                    </li>
+                    <li>The keys are case-sensitive and must be <strong>lowercase</strong>.</li>
+                    <li>Press <strong>Spacebar</strong> to start the experiment.</li>
+                    <li>After all trials, click <strong>Result</strong> to view your response times.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 style="color: red;text-align: center;font-size: 1rem;">
+            Note: Press Space to begin. Do not refresh until complete.
+        </h2>
+
+        <div class="container">
+            <div id="circuit-board">
+                <div id="working-area">
+                    <div class="para">
+                        <center>
+                            <h1 style="font-size: 1.5rem">Welcome to the Stroop Task Experiment!</h1>
+                            <h2 style="font-size: 1.2rem">
+                                Correct Count = <span id="count">0</span>
+                            </h2>
+                        </center>
+                        <canvas id="experiment"></canvas>
+                        <div id="buttonContainer">
+                            <button data-key="r">Red (R)</button>
+                            <button data-key="g">Green (G)</button>
+                            <button data-key="b">Blue (B)</button>
+                            <button data-key="y">Yellow (Y)</button>
+                            <button data-key=" ">Start (Space)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="container" style="margin-top: 20px;">
+            <div id="circuit-board2">
+                <div id="working-area2">
+                    <div id="experiment1" ></canvas>
+                </div>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="container">
+            <div class="columns is-centered">
+                <button class="v-button" style="background-color: #f47c36;" onclick="endExperiment1()">Result</button>
+                <button class="v-button" style="background-color: #4CAF50;" onclick="resetExperiment()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
