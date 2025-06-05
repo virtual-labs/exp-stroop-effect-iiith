@@ -1,0 +1,2 @@
+## Aim of the Experiment
+This experiment aims to study the **Stroop effect** by using the Stroop color and word test. It would enable participants to see how automatic actions, such as reading, make it difficult to identify the color of a word when the meaning of the word and the color are in conflict. This experiment would therefore help us understand better cognitive processes like attention and control over responses.
